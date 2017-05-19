@@ -1,7 +1,7 @@
 series: xenial
 applications: 
   postgresql: 
-    charm: "cs:postgresql-105"
+    charm: "cs:postgresql"
     num_units: 1
     annotations: 
       "gui-x": 1407
@@ -9,7 +9,7 @@ applications:
     to: 
       - "0"
   "serial-vault": 
-    charm: "cs:~jamesj/serial-vault-6"
+    charm: "cs:~jamesj/serial-vault"
     num_units: 1
     annotations: 
       "gui-x": 1151
@@ -17,7 +17,7 @@ applications:
     to: 
       - "1"
   "serial-vault-admin": 
-    charm: "cs:~jamesj/serial-vault-6"
+    charm: "cs:~jamesj/serial-vault"
     num_units: 1
     options: 
       service_type: admin
@@ -27,7 +27,7 @@ applications:
     to: 
       - "2"
   haproxy: 
-    charm: "cs:haproxy-38"
+    charm: "cs:haproxy"
     num_units: 1
     options:
       enable_monitoring: false
